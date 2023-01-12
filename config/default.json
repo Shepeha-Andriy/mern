@@ -1,0 +1,6 @@
+{
+  "port": "5000",
+  "jwtSecret": "merncoure",
+  "mongoUri": "mongodb+srv://root:1111@cluster0.v5gzggi.mongodb.net/?retryWrites=true&w=majority",
+  "baseUrl": "http:/localhost:5000"
+}
