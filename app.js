@@ -2,9 +2,12 @@ const express = require('express')
 const config = require('config')
 const path = require('path')
 const mongoose = require('mongoose')
+require('dotenv').config()
+const cors = require('cors')
 
 const PORT = config.get('port') || 5000;
 const app = express()
+app.use(cors())
 
 app.use(express.json({extended: true}))
 app.use('/t', require('./routes/redirect.routes'))
